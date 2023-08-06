@@ -12,20 +12,13 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
   ],
-  ignorePatterns: [
-    'dist',
-    '.eslintrc.cjs',
-    'node_modules/**/*',
-    'vite.config.ts',
-    'tailwind.config.js',
-    'postcss.config.js',
-  ],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'node_modules/**/*', 'vite.config.ts', 'tailwind.config.js'],
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
     parser: '@typescript-eslint/parser',
-    project: './tsconfig.json',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
   },
   plugins: ['react', 'react-refresh'],
   rules: {
