@@ -89,10 +89,3 @@ export class Request {
     })
   }
 }
-
-// const request = new Request({
-//   baseURL: BASE_URL,
-//   timeout: TIME_OUT,
-// })
-
-// export default request

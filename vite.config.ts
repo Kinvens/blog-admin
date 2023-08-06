@@ -7,6 +7,16 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': '/src',
+      //   '@views/*': './src/views/*',
+      //   '@components/*': './src/components/*',
+      //   '@utils/*': './src/utils/*',
+      //   '@hooks/*': './src/hooks/*',
+      //   '@stores/*': './src/stores/*',
+      //   '@routes/*': './src/routes/*',
+      //   '@assets/*': './src/assets/*',
+      //   '@layout/*': './src/layout/*',
+      //   '@services/*': './src/services/*',
+      //   '@config/*': './src/config/*',
     },
   },
 })
