@@ -1,15 +1,17 @@
-import { lazy } from 'react'
 import ForgotPassword from '../views/forgotPassword/index.tsx'
+import Login from '../views/login/index.tsx'
+import Home from '../views/home/index.tsx'
+
 import { createBrowserRouter } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    Component: lazy(async () => await import('../views/home/index.tsx')),
+    Component: Home,
   },
   {
     path: '/login',
-    Component: lazy(async () => await import('../views/login/index.tsx')),
+    Component: Login,
     children: [],
   },
   {
